@@ -4,7 +4,7 @@ __pycache__/
 *.log
 .DS_Store
 models/
-
+venv/
 blueprint.md
 blueprint_vi.md
 
