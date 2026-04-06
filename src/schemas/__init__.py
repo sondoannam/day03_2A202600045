@@ -1,5 +1,6 @@
 from .cv_tailoring import (
     CandidateMasterCV,
+    CertificationRecord,
     ContactInfo,
     CVBullet,
     CustomSection,
@@ -12,8 +13,11 @@ from .cv_tailoring import (
     JobResponsibility,
     LanguageEntry,
     MatchReport,
+    ProjectRecord,
     RequirementMatch,
     SkillEntry,
+    SkillCategory,
+    SourceType,
     TailoredCV,
     TailoredSection,
     TailoredTextBlock,
@@ -22,6 +26,7 @@ from .cv_tailoring import (
 
 __all__ = [
     "CandidateMasterCV",
+    "CertificationRecord",
     "ContactInfo",
     "CVBullet",
     "CustomSection",
@@ -34,8 +39,11 @@ __all__ = [
     "JobResponsibility",
     "LanguageEntry",
     "MatchReport",
+    "ProjectRecord",
     "RequirementMatch",
     "SkillEntry",
+    "SkillCategory",
+    "SourceType",
     "TailoredCV",
     "TailoredSection",
     "TailoredTextBlock",

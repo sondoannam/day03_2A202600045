@@ -1,36 +1,54 @@
+import json
 import os
 import sys
-from dotenv import load_dotenv
+from pathlib import Path
+
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    def load_dotenv() -> None:
+        return None
 
 load_dotenv()
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = Path(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(str(PROJECT_ROOT))
 
-from src.core.openrouter_provider import OpenRouterProvider
-from src.agent.agent import ReActAgent
-from src.tools.cv_extractor import cv_extractor_tool
+from src.schemas import CandidateMasterCV
+from src.tools.cv_extractor import extract_cv
 
-CV_PATH = "data/Dev-Raj-Resume.pdf"
+
+CV_PATH = PROJECT_ROOT / "data" / "example-resume.pdf"
+OUTPUT_DIR = PROJECT_ROOT / "data" / "extracted"
+OUTPUT_PATH = OUTPUT_DIR / f"{CV_PATH.stem}.json"
+
 
 def main():
-    llm = OpenRouterProvider()
+    print("Running CV extraction stage...\n")
 
-    agent = ReActAgent(
-        llm=llm,
-        tools=[cv_extractor_tool],
-        max_steps=5,
+    extraction_result = extract_cv(str(CV_PATH))
+    if extraction_result.get("error"):
+        raise RuntimeError(extraction_result["error"])
+
+    validated_cv = CandidateMasterCV.model_validate(extraction_result)
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_PATH.write_text(
+        json.dumps(validated_cv.model_dump(mode="json"), indent=2),
+        encoding="utf-8",
     )
 
-    prompt = (
-        f"Extract all information from the CV located at '{CV_PATH}'. "
-        "Then summarize the candidate's key skills, work experience, and education."
-    )
+    print("===== EXTRACTION COMPLETE =====")
+    print(f"Output JSON: {OUTPUT_PATH}")
+    print(f"Candidate: {validated_cv.contact.full_name}")
+    print(f"Skills: {len(validated_cv.skills)}")
+    print(f"Work experiences: {len(validated_cv.work_experience)}")
+    print(f"Education records: {len(validated_cv.education)}")
 
-    print("Running agent...\n")
-    answer = agent.run(prompt)
-
-    print("\n===== RESULT =====")
-    print(answer)
+    if validated_cv.metadata.warnings:
+        print("Warnings:")
+        for warning in validated_cv.metadata.warnings:
+            print(f"- {warning}")
 
 
 if __name__ == "__main__":
