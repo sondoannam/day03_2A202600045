@@ -1,0 +1,712 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "source_type": "pdf",
+    "source_name": "example-resume.pdf",
+    "source_uri": "/Users/sondoannam/vinuni/Day-3-Lab-Chatbot-vs-react-agent/data/example-resume.pdf",
+    "extractor_name": "pdfplumber_cv_extractor",
+    "extractor_version": "1.0",
+    "extracted_at": "2026-04-06T11:04:29.728776Z",
+    "language": "en",
+    "overall_confidence": 0.65,
+    "warnings": [
+      "Extracted from 1 page(s)."
+    ]
+  },
+  "contact": {
+    "full_name": "Dev Raj Singh",
+    "email": "rehansingh.4522@gmail.com",
+    "phone": "91) 91226048",
+    "location": "FULLSTACK DEVELOPER \u00b7 SOFTWAREE ENGINEER",
+    "linkedin_url": null,
+    "github_url": null,
+    "portfolio_url": null
+  },
+  "headline": "FULLSTACK DEVELOPER \u00b7 SOFTWAREE ENGINEER",
+  "professional_summary": null,
+  "skills": [
+    {
+      "skill_id": "skill_1",
+      "name": "Strong Areas: Full stack development",
+      "normalized_name": "strong areas: full stack development",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Strong Areas: Full stack development",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_2",
+      "name": "Problem Solving & Optimization",
+      "normalized_name": "problem solving & optimization",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Problem Solving & Optimization",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_3",
+      "name": "REST API",
+      "normalized_name": "rest api",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "REST API",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_4",
+      "name": "SQL",
+      "normalized_name": "sql",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "SQL",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_5",
+      "name": "CI",
+      "normalized_name": "ci",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "CI",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_6",
+      "name": "CD & DevOps.",
+      "normalized_name": "cd & devops.",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "CD & DevOps.",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_7",
+      "name": "Languages and Tools: JavaScript",
+      "normalized_name": "languages and tools: javascript",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Languages and Tools: JavaScript",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_8",
+      "name": "TypeScript",
+      "normalized_name": "typescript",
+      "category": "technical",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "TypeScript",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_9",
+      "name": "Next.js",
+      "normalized_name": "next.js",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Next.js",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_10",
+      "name": "Python",
+      "normalized_name": "python",
+      "category": "technical",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Python",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_11",
+      "name": "PostgreSQL",
+      "normalized_name": "postgresql",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "PostgreSQL",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_12",
+      "name": "Redis",
+      "normalized_name": "redis",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Redis",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_13",
+      "name": "React",
+      "normalized_name": "react",
+      "category": "framework",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "React",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_14",
+      "name": "Mongo DB",
+      "normalized_name": "mongo db",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Mongo DB",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_15",
+      "name": "Node js",
+      "normalized_name": "node js",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Node js",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_16",
+      "name": "GIT",
+      "normalized_name": "git",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "GIT",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_17",
+      "name": "Docker",
+      "normalized_name": "docker",
+      "category": "cloud",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Docker",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_18",
+      "name": "AWS",
+      "normalized_name": "aws",
+      "category": "cloud",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "AWS",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_19",
+      "name": "Unit Testing",
+      "normalized_name": "unit testing",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "Unit Testing",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_20",
+      "name": "HTML",
+      "normalized_name": "html",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "HTML",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "skill_id": "skill_21",
+      "name": "CSS.",
+      "normalized_name": "css.",
+      "category": "other",
+      "proficiency": null,
+      "years_experience": null,
+      "last_used_year": null,
+      "evidence": [
+        {
+          "quote": "CSS.",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "work_experience": [
+    {
+      "experience_id": "experience_1",
+      "company_name": "Unknown Company",
+      "job_title": "TATA CONSULTANCY SERVICES Software Engineer Oct 2023 \u2013 Present (Kolkata)",
+      "location": null,
+      "start_date": {
+        "raw": "Oct 2023",
+        "year": 2023,
+        "month": 10
+      },
+      "end_date": {
+        "raw": "Present",
+        "year": null,
+        "month": null
+      },
+      "is_current": true,
+      "employment_type": "unknown",
+      "summary": "Working as a full-stack developer for client project on wealth management platform in the BFSI sector, utilizing, C#, JavaScript and",
+      "bullets": [
+        {
+          "bullet_id": "experience_1_bullet_1",
+          "text": "Working as a full-stack developer for client project on wealth management platform in the BFSI sector, utilizing, C#, JavaScript and",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 Working as a full-stack developer for client project on wealth management platform in the BFSI sector, utilizing, C#, JavaScript and",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_2",
+          "text": "React to build scalable & high-performance SaaS tools, APIs and backend processes.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "React to build scalable & high-performance SaaS tools, APIs and backend processes.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_3",
+          "text": "Collaborated with client teams to rebuild and optimize legacy applications and integrate complex financial systems, to create",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 Collaborated with client teams to rebuild and optimize legacy applications and integrate complex financial systems, to create",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_4",
+          "text": "technical specifications, and deliver features that aligned with business needs and compliance.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "technical specifications, and deliver features that aligned with business needs and compliance.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_5",
+          "text": "End-to-end feature delivery, reducing deployment times by 50% by automated testing framework.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 End-to-end feature delivery, reducing deployment times by 50% by automated testing framework.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_6",
+          "text": "CARE FI SOFTWARE DEVELOPER INTERN Oct. 2022 \u2011 May 2023 (Gurugram, India)",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "CARE FI SOFTWARE DEVELOPER INTERN Oct. 2022 \u2011 May 2023 (Gurugram, India)",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_7",
+          "text": "Designed and implemented a healthcare fintech app using Python, Django, Postgres, Redis, AWS, ORM, and React.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 Designed and implemented a healthcare fintech app using Python, Django, Postgres, Redis, AWS, ORM, and React.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_8",
+          "text": "Driven the implementation of numerous features, related to KYC, transactions and finance portfolio, reporting directly to the CTO.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 Driven the implementation of numerous features, related to KYC, transactions and finance portfolio, reporting directly to the CTO.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_9",
+          "text": "Built an extra security layer for sensitive data like two\u2011step permission for bank account addition, data validation and caching.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 Built an extra security layer for sensitive data like two\u2011step permission for bank account addition, data validation and caching.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_10",
+          "text": "Optimized SQL queries & DB indexing, reducing aws costing and db calls by 40%.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 Optimized SQL queries & DB indexing, reducing aws costing and db calls by 40%.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_11",
+          "text": "Enhanced API performance by 20% and created financial portfolios for user, underwriter, sales, and operation teams.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 Enhanced API performance by 20% and created financial portfolios for user, underwriter, sales, and operation teams.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_12",
+          "text": "NIRMITEE BACKEND DEVELOPER INTERN Dec. 2021 \u2011 Apr. 2022 (Pune, India)",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "NIRMITEE BACKEND DEVELOPER INTERN Dec. 2021 \u2011 Apr. 2022 (Pune, India)",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_13",
+          "text": "Build application for movie tickets data parsing, dashboard, price analysis report, and marketing units like cashback system, coupon",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "\u2022 Build application for movie tickets data parsing, dashboard, price analysis report, and marketing units like cashback system, coupon",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "bullet_id": "experience_1_bullet_14",
+          "text": "codes, flyers etc., using Python and JavaScript. Enhanced user engagement reduced page load time.",
+          "technologies": [],
+          "competencies": [],
+          "metrics": [],
+          "evidence": [
+            {
+              "quote": "codes, flyers etc., using Python and JavaScript. Enhanced user engagement reduced page load time.",
+              "section_id": "work_experience_1",
+              "span": null,
+              "confidence": null
+            }
+          ]
+        }
+      ],
+      "skills": []
+    }
+  ],
+  "education": [
+    {
+      "education_id": "education_1",
+      "institution": "Maulana Abul Kalam Azad University of B.Tech. in Computer Science and Engineering",
+      "degree": null,
+      "field_of_study": null,
+      "location": null,
+      "start_date": null,
+      "end_date": null,
+      "gpa": null,
+      "honors": [],
+      "evidence": [
+        {
+          "quote": "Maulana Abul Kalam Azad University of B.Tech. in Computer Science and Engineering",
+          "section_id": "education",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "education_id": "education_2",
+      "institution": "June. 2019 \u2011 Aug. 2023 (Kolkata, India)",
+      "degree": null,
+      "field_of_study": null,
+      "location": null,
+      "start_date": null,
+      "end_date": null,
+      "gpa": null,
+      "honors": [],
+      "evidence": [
+        {
+          "quote": "June. 2019 \u2011 Aug. 2023 (Kolkata, India)",
+          "section_id": "education",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "education_id": "education_3",
+      "institution": "Technology (TMSL) 8.6 cgpa",
+      "degree": null,
+      "field_of_study": null,
+      "location": null,
+      "start_date": null,
+      "end_date": null,
+      "gpa": null,
+      "honors": [],
+      "evidence": [
+        {
+          "quote": "Technology (TMSL) 8.6 cgpa",
+          "section_id": "education",
+          "span": null,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "certifications": [],
+  "projects": [],
+  "languages": [],
+  "custom_sections": [
+    {
+      "section_id": "projects",
+      "title": "Projects",
+      "content": [
+        "FREELANCEX VIDEO LINK SITE GITHUB",
+        "Created a freelancing web app where freelancers can sell their services as gigs, manage orders and payments.",
+        "Implemented social media features with real\u2011time messaging, work management tool, Stripe payment and Cloudinary integration.",
+        "MVP design, with MERN Stack, Next Js, React JS, MongoDB, Node and Express Js with CSS libraries like Ant design, Semantic UI and tailwind.",
+        "GREENIE VIDEO SITE LINK GITHUB API FRONTEND",
+        "A Plant selling e\u2011commerce web app with payment gateway, send grid, access to orders and dashboard",
+        "REST API created with Python and Django, deployed to cloud, worked on MySQL database and secure\u2011auth.",
+        "Front end with JavaScript & Developed using REACT functional components, props, hooks, and state.",
+        "Implemented software design process, OOPS design, database modeling and design.",
+        "Target Lead SITE LINK APP LINK",
+        "AI powered B2B lead generation tool for personalized email, campaign and marketing automation that connects with your leads",
+        "through CSV, or connect with your CRM to generate email and send through gmail or outlook in inbox uniquely for each user.",
+        "Automation agent to run background job, webhook and periodic task that sync through API and message broker.",
+        "Tech: Python | JavaScript| PostgreSQL | Celery | Redis | Django",
+        "ACHIEVEMENTS",
+        "THE MAGIC BOOKSHELF \u2011 2nd place winner at Rowdyhacks hackathon for creating an online book exchange community catering to",
+        "college students. Built with Flask, MySQL, and JavaScript with a team of 3 developers. YouTube",
+        "SFSU Hackathon \u2011 Winner at SFSU Hacks for Best Use of Aut0 and Best ML hack with DementAi predicting dementia early, developed by",
+        "a team of 4 using Python, Flask, JS, and ML.",
+        "Pre\u2011finalist at Smart India Hackathon 2022 (Software Edition).",
+        "Solved 600+ programming problems on LeetCode and Hacker Rank."
+      ]
+    }
+  ],
+  "raw_text": "Dev Raj Singh\nFULLSTACK DEVELOPER \u00b7 SOFTWAREE ENGINEER\n(+91) 9122604819 | Kolkata, India | rehansingh.4522@gmail.com | devraj4522 | dev-raj-s-80871b12b\nSKILLS\n\u2022 Strong Areas: Full stack development, Problem Solving & Optimization, REST API, SQL, CI/CD & DevOps.\n\u2022 Languages and Tools: JavaScript, TypeScript, Next.js, Python, PostgreSQL, Redis, React, Mongo DB, Node js, GIT, Docker, AWS,\nUnit Testing, HTML, CSS.\nEXPERIENCE\nTATA CONSULTANCY SERVICES Software Engineer Oct 2023 \u2013 Present (Kolkata)\n\u2022 Working as a full-stack developer for client project on wealth management platform in the BFSI sector, utilizing, C#, JavaScript and\nReact to build scalable & high-performance SaaS tools, APIs and backend processes.\n\u2022 Collaborated with client teams to rebuild and optimize legacy applications and integrate complex financial systems, to create\ntechnical specifications, and deliver features that aligned with business needs and compliance.\n\u2022 End-to-end feature delivery, reducing deployment times by 50% by automated testing framework.\nCARE FI SOFTWARE DEVELOPER INTERN Oct. 2022 \u2011 May 2023 (Gurugram, India)\n\u2022 Designed and implemented a healthcare fintech app using Python, Django, Postgres, Redis, AWS, ORM, and React.\n\u2022 Driven the implementation of numerous features, related to KYC, transactions and finance portfolio, reporting directly to the CTO.\n\u2022 Built an extra security layer for sensitive data like two\u2011step permission for bank account addition, data validation and caching.\n\u2022 Optimized SQL queries & DB indexing, reducing aws costing and db calls by 40%.\n\u2022 Enhanced API performance by 20% and created financial portfolios for user, underwriter, sales, and operation teams.\nNIRMITEE BACKEND DEVELOPER INTERN Dec. 2021 \u2011 Apr. 2022 (Pune, India)\n\u2022 Build application for movie tickets data parsing, dashboard, price analysis report, and marketing units like cashback system, coupon\ncodes, flyers etc., using Python and JavaScript. Enhanced user engagement reduced page load time.\nPROJECTS\nFREELANCEX VIDEO LINK SITE GITHUB\n\u2022 Created a freelancing web app where freelancers can sell their services as gigs, manage orders and payments.\n\u2022 Implemented social media features with real\u2011time messaging, work management tool, Stripe payment and Cloudinary integration.\n\u2022 MVP design, with MERN Stack, Next Js, React JS, MongoDB, Node and Express Js with CSS libraries like Ant design, Semantic UI and tailwind.\nGREENIE VIDEO SITE LINK GITHUB API FRONTEND\n\u2022 A Plant selling e\u2011commerce web app with payment gateway, send grid, access to orders and dashboard\n\u2022 REST API created with Python and Django, deployed to cloud, worked on MySQL database and secure\u2011auth.\n\u2022 Front end with JavaScript & Developed using REACT functional components, props, hooks, and state.\n\u2022 Implemented software design process, OOPS design, database modeling and design.\nTarget Lead SITE LINK APP LINK\n\u2022 AI powered B2B lead generation tool for personalized email, campaign and marketing automation that connects with your leads\nthrough CSV, or connect with your CRM to generate email and send through gmail or outlook in inbox uniquely for each user.\n\u2022 Automation agent to run background job, webhook and periodic task that sync through API and message broker.\n\u2022 Tech: Python | JavaScript| PostgreSQL | Celery | Redis | Django\nACHIEVEMENTS\n\u2022 THE MAGIC BOOKSHELF \u2011 2nd place winner at Rowdyhacks hackathon for creating an online book exchange community catering to\ncollege students. Built with Flask, MySQL, and JavaScript with a team of 3 developers. YouTube\n\u2022 SFSU Hackathon \u2011 Winner at SFSU Hacks for Best Use of Aut0 and Best ML hack with DementAi predicting dementia early, developed by\na team of 4 using Python, Flask, JS, and ML.\n\u2022 Pre\u2011finalist at Smart India Hackathon 2022 (Software Edition).\n\u2022 Solved 600+ programming problems on LeetCode and Hacker Rank.\nEDUCATION\nMaulana Abul Kalam Azad University of B.Tech. in Computer Science and Engineering\nJune. 2019 \u2011 Aug. 2023 (Kolkata, India)\nTechnology (TMSL) 8.6 cgpa"
+}

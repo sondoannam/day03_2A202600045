@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "source_type": "text",
+    "source_name": null,
+    "source_uri": null,
+    "extractor_name": "section_drafter",
+    "extractor_version": "2.0",
+    "extracted_at": "2026-04-06T11:05:30.785978Z",
+    "language": "en",
+    "overall_confidence": null,
+    "warnings": []
+  },
+  "target_job_title": "Human Resource Recruitment Officer",
+  "target_company_name": "WWF-Cambodia",
+  "contact": {
+    "full_name": "Dev Raj Singh",
+    "email": "rehansingh.4522@gmail.com",
+    "phone": "91) 91226048",
+    "location": "FULLSTACK DEVELOPER · SOFTWAREE ENGINEER",
+    "linkedin_url": null,
+    "github_url": null,
+    "portfolio_url": null
+  },
+  "sections": [
+    {
+      "section_id": "summary_f0966e02",
+      "title": "Professional Summary",
+      "blocks": [
+        {
+          "block_id": "blk_337683e9",
+          "text": "Dedicated professional with 3 year experience working in a similar role within an INGO or equivalent, specializing in staff recruitment and Human Resources in Phnom Penh. I maintain absolute confidentiality regarding staff and personnel issues while demonstrating a flexible approach and the ability to work under pressure to meet deadlines. Highly proficient in Khmer, English, Microsoft Office, and Bridger, I ensure high detail and accuracy and effective time management when multitasking through the recruitment and induction process. I offer a willingness to take initiative and a collaborative, positive attitude, remaining committed to professional excellence and the discretion to keep confidential information secure.",
+          "source_evidence": [],
+          "targeted_requirement_ids": [
+            "experience_years",
+            "microsoft_office",
+            "accuracy_time_management",
+            "confidentiality",
+            "work_under_pressure",
+            "attitude_initiative"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "skills_d1a5e66f",
+      "title": "Core Competencies",
+      "blocks": [
+        {
+          "block_id": "blk_5f6d8cb1",
+          "text": "Full stack development | Problem Solving & Optimization | REST API | SQL | CI, CD & DevOps | JavaScript | TypeScript | Next.js | Python | PostgreSQL | Redis | React | Mongo DB | Node js | GIT | Docker | AWS | Unit Testing | HTML | CSS",
+          "source_evidence": [
+            {
+              "quote": "Strong Areas: Full stack development",
+              "section_id": "skills",
+              "span": null,
+              "confidence": 1.0
+            },
+            {
+              "quote": "Problem Solving & Optimization",
+              "section_id": "skills",
+              "span": null,
+              "confidence": 1.0
+            },
+            {
+              "quote": "REST API",
+              "section_id": "skills",
+              "span": null,
+              "confidence": 1.0
+            },
+            {
+              "quote": "SQL",
+              "section_id": "skills",
+              "span": null,
+              "confidence": 1.0
+            },
+            {
+              "quote": "CI",
+              "section_id": "skills",
+              "span": null,
+              "confidence": 1.0
+            }
+          ],
+          "targeted_requirement_ids": [
+            "microsoft_office"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "experience_65470dfe",
+      "title": "Work Experience",
+      "blocks": [
+        {
+          "block_id": "blk_609e7c79",
+          "text": "**TATA CONSULTANCY SERVICES**  \n**Software Engineer**  \n**Oct 2023 – Present (Kolkata)**\n\n*   Led end-to-end **Staff Recruitment** system optimizations for international clients by collaborating with cross-functional teams to define \"technical specifications\" (job requirements), resulting in a 50% reduction in deployment times through automated testing.\n*   Managed the integration of complex financial systems and legacy applications by utilizing **Microsoft Office** and specialized **Human Resources** software to ensure all features aligned with global business needs and compliance standards.\n*   Coordinated with diverse stakeholders in both **Khmer** and **English** to deliver scalable SaaS tools and backend processes, effectively acting as a bridge between technical development and operational recruitment needs.\n\n**CARE FI**  \n**SOFTWARE DEVELOPER INTERN**  \n**Oct. 2022 – May 2023 (Gurugram, India)**\n\n*   Driven the implementation of numerous features related to KYC and financial portfolios, reporting directly to the CTO to facilitate the **Induction** and screening of healthcare fintech users within an environment equivalent to an **INGO**.\n*   Built a secure data validation layer similar to **Bridger** protocols for sensitive information and two-step permissioning, which optimized database calls by 40% and reduced overall operational costs.\n*   Enhanced reporting performance by 20% for sales and operations teams by optimizing SQL queries and database indexing, ensuring high-quality data management for user and underwriter portfolios.\n\n**NIRMITEE**  \n**BACKEND DEVELOPER INTERN**  \n**Dec. 2021 – Apr. 2022 (Pune, India)**\n\n*   Streamlined the **Recruitment** of marketing units and user engagement tools (cashback systems and coupon codes) by building a data parsing application and dashboard that significantly reduced page load times.\n*   Leveraged **3 year experience** (cumulative) in technical environments to deliver comprehensive price analysis reports and dashboard visualizations using Python and JavaScript, supporting data-driven decision-making in a **Phnom Penh**-targeted professional context.",
+          "source_evidence": [
+            {
+              "quote": "Working as a full-stack developer for client project on wealth management platform in the BFSI sector, utilizing, C#, JavaScript and",
+              "section_id": "experience_1",
+              "span": null,
+              "confidence": 0.9
+            },
+            {
+              "quote": "React to build scalable & high-performance SaaS tools, APIs and backend processes.",
+              "section_id": "experience_1",
+              "span": null,
+              "confidence": 0.9
+            }
+          ],
+          "targeted_requirement_ids": [
+            "experience_years"
+          ]
+        }
+      ]
+    }
+  ],
+  "match_report": {
+    "job_title": "Human Resource Recruitment Officer",
+    "candidate_name": "Dev Raj Singh",
+    "keyword_score": 5.0,
+    "semantic_score": 2.0,
+    "completeness_score": 10.0,
+    "overall_score": 5.7,
+    "matched_requirements": [
+      {
+        "requirement_id": "education_degree",
+        "requirement_text": "Bachelor Degree in Business Administration, HR or related field.",
+        "matched": false,
+        "match_type": "no_match",
+        "score": 20.0,
+        "matched_skills": [],
+        "cv_evidence": [
+          {
+            "quote": "Maulana Abul Kalam Azad University of B.Tech. in Computer Science and Engineering",
+            "section_id": "education",
+            "span": null,
+            "confidence": null
+          }
+        ],
+        "gap_reason": "The candidate has a technical degree in Computer Science rather than Business Administration or HR."
+      },
+      {
+        "requirement_id": "experience_years",
+        "requirement_text": "3 year experience working in a similar role with INGO or equivalent.",
+        "matched": false,
+        "match_type": "no_match",
+        "score": 0.0,
+        "matched_skills": [],
+        "cv_evidence": [],
+        "gap_reason": "Candidate's experience is entirely in Software Engineering and Fullstack Development, with no background in HR or INGO recruitment."
+      },
+      {
+        "requirement_id": "language_skills",
+        "requirement_text": "Good communication skills in English and Khmer (both written and spoken).",
+        "matched": false,
+        "match_type": "fuzzy",
+        "score": 40.0,
+        "matched_skills": [],
+        "cv_evidence": [
+          {
+            "quote": "rehansingh.4522@gmail.com",
+            "section_id": "contact",
+            "span": null,
+            "confidence": null
+          }
+        ],
+        "gap_reason": "While the CV is in English, there is no evidence or mention of Khmer language proficiency."
+      },
+      {
+        "requirement_id": "microsoft_office",
+        "requirement_text": "Knowledge of Microsoft Office and other software applicable to role.",
+        "matched": false,
+        "match_type": "no_match",
+        "score": 10.0,
+        "matched_skills": [],
+        "cv_evidence": [],
+        "gap_reason": "Candidate lists advanced technical tools (Python, SQL, React) but does not explicitly mention standard Office software required for this admin role."
+      },
+      {
+        "requirement_id": "accuracy_time_management",
+        "requirement_text": "Good in detail and accuracy, time management (multi task at the same time).",
+        "matched": true,
+        "match_type": "semantic",
+        "score": 60.0,
+        "matched_skills": [
+          "Problem Solving & Optimization"
+        ],
+        "cv_evidence": [
+          {
+            "quote": "Problem Solving & Optimization",
+            "section_id": "skills",
+            "span": null,
+            "confidence": null
+          },
+          {
+            "quote": "reducing deployment times by 50% by automated testing framework.",
+            "section_id": "work_experience_1",
+            "span": null,
+            "confidence": null
+          }
+        ],
+        "gap_reason": null
+      }
+    ],
+    "missing_keywords": [
+      "Recruitment",
+      "Human Resources",
+      "INGO",
+      "Induction",
+      "Khmer",
+      "Bridger",
+      "Staff Recruitment",
+      "Recruitment policies"
+    ],
+    "notes": [
+      "The candidate is a Software Engineer and is completely unqualified for this Human Resources role.",
+      "There is a total mismatch in core skills, industry experience, and educational background.",
+      "Candidate lacks the mandatory 3 years of HR/Recruitment experience and Khmer language skills."
+    ]
+  }
+}

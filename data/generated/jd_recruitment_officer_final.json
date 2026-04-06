@@ -1,0 +1,547 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "source_type": "pdf",
+    "source_name": "jd_recruitment_officer_final.pdf",
+    "source_uri": "/Users/sondoannam/vinuni/Day-3-Lab-Chatbot-vs-react-agent/data/jds/jd_recruitment_officer_final.pdf",
+    "extractor_name": "gemini_jd_extractor",
+    "extractor_version": "gemini-3-flash-preview",
+    "extracted_at": "2024-05-22T10:30:00Z",
+    "language": "en",
+    "overall_confidence": null,
+    "warnings": []
+  },
+  "title": "Human Resource Recruitment Officer",
+  "company_name": "WWF-Cambodia",
+  "company_industry": "Non-profit / NGO",
+  "locations": [
+    "Phnom Penh, Cambodia"
+  ],
+  "work_arrangement": "onsite",
+  "employment_type": "full_time",
+  "seniority": "mid",
+  "summary": "The Human Resources Recruitment Officer responsible for managing all aspects of staff recruitment. S/he oversees the process to ensure procedures are followed in a fair and transparent manner. H/she works closely with hiring managers to process forms, shortlist candidates, schedule interviews, and communicates with candidates and provides a high quality and professional human resources Recruitment service through the effective administration of HR recruitment system based on Recruitment policies and procedures for all WWF offices.",
+  "responsibilities": [
+    {
+      "responsibility_id": "recruitment_process_support",
+      "text": "Supporting and participating in all recruitment Process (staff, intern, volunteer, secondment...) collecting applications, facilitating the candidate\u2019s assessment (written Test and Interview), sending reference checks, negotiation, offering and employment contract.",
+      "priority": "must",
+      "evidence": [
+        {
+          "quote": "Supporting and participating in all recruitment Process (staff, intern, volunteer, secondment...) collecting applications, facilitating the candidate\u2019s assessment (written Test and Interview), sending reference checks, negotiation, offering and employment contract.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "lead_recruitment_coordination",
+      "text": "Lead all recruitment processes in coordination with hiring managers",
+      "priority": "must",
+      "evidence": [
+        {
+          "quote": "Lead all recruitment processes in coordination with hiring managers",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "induction_framework",
+      "text": "Preparing the induction frame works by coordination with all relevant departments to provide the full inductions to the new staff (local, expatriate, regional staff)",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Preparing the induction frame works by coordination with all relevant departments to provide the full inductions to the new staff (local, expatriate, regional staff)",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "jd_review",
+      "text": "Review JD format as WWF Standard, cross checking with Salary Grades and Position Classification Framework",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Review JD format as WWF Standard, cross checking with Salary Grades and Position Classification Framework",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "interview_communication",
+      "text": "Communicate the outcome of interview and process recruitment paper work for Approval.",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Communicate the outcome of interview and process recruitment paper work for Approval.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "reference_checks",
+      "text": "Send the reference check to ensure the successful candidate qualified for the role",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Send the reference check to ensure the successful candidate qualified for the role",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "job_offers",
+      "text": "Send job offer in verbal and written to successful and notify unsuccessful candidate",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Send job offer in verbal and written to successful and notify unsuccessful candidate",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "security_compliance",
+      "text": "Check Bridger for anti-terrorism and forward question from unsuccessful candidate to hiring manager",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Check Bridger for anti-terrorism and forward question from unsuccessful candidate to hiring manager",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "logistics_coordination",
+      "text": "Coordinate the logistic arrangement for new staff to ensure that new staff receive adequate information about the organization and its systems, policies and procedures, work desk, computer, email address, insurances, etc.,.",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Coordinate the logistic arrangement for new staff to ensure that new staff receive adequate information about the organization and its systems, policies and procedures, work desk, computer, email address, insurances, etc.,.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "probation_management",
+      "text": "Ensuring that probations for new staff are set and assessed properly and on time.",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Ensuring that probations for new staff are set and assessed properly and on time.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "document_collection",
+      "text": "Ensuring that all required documents are collected from new staff including family book, degrees, ID Card, Marriage Certificate (if married), bank account...etc.",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Ensuring that all required documents are collected from new staff including family book, degrees, ID Card, Marriage Certificate (if married), bank account...etc.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "employee_support",
+      "text": "Serving as a point person all employees\u2019 questions",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Serving as a point person all employees\u2019 questions",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "recruitment_tracking",
+      "text": "Keep track of all ongoing recruitments",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Keep track of all ongoing recruitments",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "panel_participation",
+      "text": "Be an interview panels as requested",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Be an interview panels as requested",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "budget_compliance",
+      "text": "Ensure Recruitment Form with other supporting document approved including budgets",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Ensure Recruitment Form with other supporting document approved including budgets",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "personnel_files",
+      "text": "Support on maintaining personnel files and documentation of Consultant and Staff",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Support on maintaining personnel files and documentation of Consultant and Staff",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "database_support",
+      "text": "Support on database as a backup person",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Support on database as a backup person",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "audit_finance_support",
+      "text": "Provide support on annual HR audit, finance team and admin when required.",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Provide support on annual HR audit, finance team and admin when required.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "payment_vouchers",
+      "text": "Prepare payment voucher related to job advertisement, insurance, tax and NSSF",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Prepare payment voucher related to job advertisement, insurance, tax and NSSF",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "staff_movement_updates",
+      "text": "Update monthly staff movement to all staff",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Update monthly staff movement to all staff",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "offboarding_admin",
+      "text": "Issue employment certificate and collect exit interview, clearance form",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Issue employment certificate and collect exit interview, clearance form",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "list_maintenance",
+      "text": "Update National, international staff, Volunteer, Host, Expat and Intern Lists",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Update National, international staff, Volunteer, Host, Expat and Intern Lists",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "tax_certificates",
+      "text": "Go to tax Department for Tax certificate for expat staff",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Go to tax Department for Tax certificate for expat staff",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "translation",
+      "text": "Translating documents from Khmer to English and via versa",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Translating documents from Khmer to English and via versa",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "responsibility_id": "supervision",
+      "text": "Supervises : Intern",
+      "priority": "should",
+      "evidence": [
+        {
+          "quote": "Supervises : Intern",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "requirement_id": "education_degree",
+      "category": "education",
+      "text": "Bachelor Degree in Business Administration, HR or related field.",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Bachelor Degree in Business Administration, HR or related field.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "experience_years",
+      "category": "experience",
+      "text": "3 year experience working in a similar role with INGO or equivalent.",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": 3.0,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "3 year experience working in a similar role with INGO or equivalent.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "confidentiality",
+      "category": "soft_skill",
+      "text": "Maintain absolute confidentiality regarding staff, personnel issues",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Maintain absolute confidentiality regarding staff, personnel issues",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "work_under_pressure",
+      "category": "soft_skill",
+      "text": "Demonstrated flexible approach and ability to work under pressure and to organise and manage workload to meet deadlines.",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Demonstrated flexible approach and ability to work under pressure and to organise and manage workload to meet deadlines.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "microsoft_office",
+      "category": "tool",
+      "text": "Knowledge of Microsoft Office and other software applicable to role.",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Knowledge of Microsoft Office and other software applicable to role.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "attitude_initiative",
+      "category": "soft_skill",
+      "text": "Willingness to take initiative and collaborative, positive attitude and keep confidential.",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Willingness to take initiative and collaborative, positive attitude and keep confidential.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "accuracy_time_management",
+      "category": "soft_skill",
+      "text": "Good in detail and accuracy, time management (multi task at the same time).",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Good in detail and accuracy, time management (multi task at the same time).",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "language_skills",
+      "category": "language",
+      "text": "Good communication skills in English and Khmer (both written and spoken).",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Good communication skills in English and Khmer (both written and spoken).",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "wwf_behaviours",
+      "category": "other",
+      "text": "Demonstrates WWF behaviours in ways of working: strive for impact, listen deeply, collaborate openly and innovate fearlessly",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Demonstrates WWF behaviours in ways of working: strive for impact, listen deeply, collaborate openly and innovate fearlessly",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "requirement_id": "wwf_values",
+      "category": "other",
+      "text": "Adheres to WWF\u2019s value: Knowledgeable, Optimistic, Determined and Engaging.",
+      "normalized_value": null,
+      "priority": "must",
+      "required": true,
+      "min_years_experience": null,
+      "aliases": [],
+      "evidence": [
+        {
+          "quote": "Adheres to WWF\u2019s value: Knowledgeable, Optimistic, Determined and Engaging.",
+          "section_id": null,
+          "span": null,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "target_keywords": [
+    "Recruitment",
+    "Human Resources",
+    "INGO",
+    "Induction",
+    "Khmer",
+    "English",
+    "Bridger",
+    "Staff Recruitment",
+    "Phnom Penh"
+  ],
+  "compensation_summary": null,
+  "application_url": null,
+  "raw_text": null
+}

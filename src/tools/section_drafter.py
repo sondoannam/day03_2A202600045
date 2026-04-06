@@ -330,6 +330,57 @@ def export_cv_markdown(_args: str = "") -> str:
     return f"Markdown CV exported to '{out_path}' ({len(markdown)} chars).\n\n{markdown}"
 
 
+def export_cv_json(_args: str = "") -> str:
+    """Export the assembled TailoredCV as a JSON file."""
+    from src.tools._session import session
+
+    if not session.tailored_cv:
+        assemble_result = assemble_cv()
+        if assemble_result.startswith("ERROR:"):
+            return assemble_result
+
+    tcv: TailoredCV = session.tailored_cv
+    output_arg = _args.strip()
+    if output_arg:
+        out_path = Path(output_arg)
+        if out_path.is_dir() or not out_path.suffix:
+            out_path = out_path / "tailored_cv.json"
+    else:
+        out_path = Path("data") / "generated" / "tailored_cv.json"
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(tcv.model_dump_json(indent=2), encoding="utf-8")
+
+    logger.log_event("TOOL_RESULT", {"tool": "export_cv_json", "path": str(out_path)})
+    return f"JSON CV exported to '{out_path}'."
+
+
+def generate_cv_json(args: str = "") -> str:
+    """Draft the core sections, assemble the TailoredCV, and export it to JSON."""
+    from src.tools._session import session
+
+    if not session.cv_data:
+        return "ERROR: No CV loaded. Call extract_cv first."
+    if not session.jd_data:
+        return "ERROR: No JD loaded. Call extract_jd first."
+    if not session.llm:
+        return "ERROR: No LLM in session."
+
+    session.tailored_sections.clear()
+    session.tailored_cv = None
+
+    for section in ("summary", "skills", "experience"):
+        result = draft_section(section)
+        if result.startswith("ERROR:"):
+            return result
+
+    assemble_result = assemble_cv()
+    if assemble_result.startswith("ERROR:"):
+        return assemble_result
+
+    return export_cv_json(args)
+
+
 # ── Tool descriptors ──────────────────────────────────────────────────────────
 
 section_drafter_tool = {
@@ -359,4 +410,23 @@ export_cv_markdown_tool = {
         "Requires assemble_cv to be called first. No input needed."
     ),
     "function": export_cv_markdown,
+}
+
+export_cv_json_tool = {
+    "name": "export_cv_json",
+    "description": (
+        "Exports the assembled TailoredCV as a JSON file under data/generated/tailored_cv.json. "
+        "If needed, it assembles the CV first. No input needed."
+    ),
+    "function": export_cv_json,
+}
+
+generate_cv_json_tool = {
+    "name": "generate_cv_json",
+    "description": (
+        "Generates a new tailored CV in JSON format by drafting summary, skills, and experience, "
+        "assembling the TailoredCV, and exporting it to JSON. "
+        "Optional input: output file path or output directory."
+    ),
+    "function": generate_cv_json,
 }

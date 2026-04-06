@@ -1,0 +1,104 @@
+{
+  "job_title": "Human Resource Recruitment Officer",
+  "candidate_name": "Dev Raj Singh",
+  "keyword_score": 5.0,
+  "semantic_score": 2.0,
+  "completeness_score": 10.0,
+  "overall_score": 5.7,
+  "matched_requirements": [
+    {
+      "requirement_id": "education_degree",
+      "requirement_text": "Bachelor Degree in Business Administration, HR or related field.",
+      "matched": false,
+      "match_type": "no_match",
+      "score": 20.0,
+      "matched_skills": [],
+      "cv_evidence": [
+        {
+          "quote": "Maulana Abul Kalam Azad University of B.Tech. in Computer Science and Engineering",
+          "section_id": "education",
+          "span": null,
+          "confidence": null
+        }
+      ],
+      "gap_reason": "The candidate has a technical degree in Computer Science rather than Business Administration or HR."
+    },
+    {
+      "requirement_id": "experience_years",
+      "requirement_text": "3 year experience working in a similar role with INGO or equivalent.",
+      "matched": false,
+      "match_type": "no_match",
+      "score": 0.0,
+      "matched_skills": [],
+      "cv_evidence": [],
+      "gap_reason": "Candidate's experience is entirely in Software Engineering and Fullstack Development, with no background in HR or INGO recruitment."
+    },
+    {
+      "requirement_id": "language_skills",
+      "requirement_text": "Good communication skills in English and Khmer (both written and spoken).",
+      "matched": false,
+      "match_type": "fuzzy",
+      "score": 40.0,
+      "matched_skills": [],
+      "cv_evidence": [
+        {
+          "quote": "rehansingh.4522@gmail.com",
+          "section_id": "contact",
+          "span": null,
+          "confidence": null
+        }
+      ],
+      "gap_reason": "While the CV is in English, there is no evidence or mention of Khmer language proficiency."
+    },
+    {
+      "requirement_id": "microsoft_office",
+      "requirement_text": "Knowledge of Microsoft Office and other software applicable to role.",
+      "matched": false,
+      "match_type": "no_match",
+      "score": 10.0,
+      "matched_skills": [],
+      "cv_evidence": [],
+      "gap_reason": "Candidate lists advanced technical tools (Python, SQL, React) but does not explicitly mention standard Office software required for this admin role."
+    },
+    {
+      "requirement_id": "accuracy_time_management",
+      "requirement_text": "Good in detail and accuracy, time management (multi task at the same time).",
+      "matched": true,
+      "match_type": "semantic",
+      "score": 60.0,
+      "matched_skills": [
+        "Problem Solving & Optimization"
+      ],
+      "cv_evidence": [
+        {
+          "quote": "Problem Solving & Optimization",
+          "section_id": "skills",
+          "span": null,
+          "confidence": null
+        },
+        {
+          "quote": "reducing deployment times by 50% by automated testing framework.",
+          "section_id": "work_experience_1",
+          "span": null,
+          "confidence": null
+        }
+      ],
+      "gap_reason": null
+    }
+  ],
+  "missing_keywords": [
+    "Recruitment",
+    "Human Resources",
+    "INGO",
+    "Induction",
+    "Khmer",
+    "Bridger",
+    "Staff Recruitment",
+    "Recruitment policies"
+  ],
+  "notes": [
+    "The candidate is a Software Engineer and is completely unqualified for this Human Resources role.",
+    "There is a total mismatch in core skills, industry experience, and educational background.",
+    "Candidate lacks the mandatory 3 years of HR/Recruitment experience and Khmer language skills."
+  ]
+}

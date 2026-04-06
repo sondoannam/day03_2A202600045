@@ -1,13 +1,22 @@
 import os
-import json
-from typing import Callable, List, Tuple
+import re
+from typing import Callable, List, Optional, Tuple
+
 from openai import OpenAI
 import instructor
-from dotenv import load_dotenv
+
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    def load_dotenv() -> None:
+        return None
+
 
 load_dotenv()
 
 from src.schemas.cv_tailoring import MatchReport
+from src.core.gemini_provider import GeminiProvider
+from src.core.openrouter_provider import OpenRouterProvider
 from src.tools._session import session
 
 def _is_configured_key(value: str | None) -> bool:
@@ -20,19 +29,26 @@ def _is_configured_key(value: str | None) -> bool:
         "your_openrouter_api_key_here",
     }
 
-def _provider_attempts() -> List[Tuple[str, str, Callable[[], OpenAI]]]:
-    attempts: List[Tuple[str, str, Callable[[], OpenAI]]] = []
+def _provider_attempts() -> List[Tuple[str, str, Optional[Callable[[], OpenAI]]]]:
+    attempts: List[Tuple[str, str, Optional[Callable[[], OpenAI]]]] = []
+
+    gemini_key = os.getenv("GEMINI_API_KEY")
+    if _is_configured_key(gemini_key):
+        attempts.append(
+            (
+                "gemini",
+                os.getenv("GEMINI_MATCH_MODEL", os.getenv("DEFAULT_MODEL", "gemini-3-flash-preview")),
+                None,
+            )
+        )
     
     openrouter_key = os.getenv("OPENROUTER_API_KEY")
     if _is_configured_key(openrouter_key):
         attempts.append(
             (
                 "openrouter",
-                os.getenv("OPENROUTER_JD_MODEL", "openrouter/free"),
-                lambda: OpenAI(
-                    base_url="https://openrouter.ai/api/v1",
-                    api_key=openrouter_key,
-                ),
+                os.getenv("OPENROUTER_MATCH_MODEL", "qwen/qwen3.6-plus:free"),
+                None,
             )
         )
 
@@ -41,12 +57,41 @@ def _provider_attempts() -> List[Tuple[str, str, Callable[[], OpenAI]]]:
         attempts.append(
             (
                 "openai",
-                os.getenv("OPENAI_JD_MODEL", "gpt-4o-mini"),
+                os.getenv("OPENAI_MATCH_MODEL", "gpt-4o-mini"),
                 lambda: OpenAI(api_key=openai_key),
             )
         )
 
     return attempts
+
+
+def _extract_json_payload(text: str) -> str:
+    fenced_match = re.search(r"```(?:json)?\s*(\{.*\})\s*```", text, re.DOTALL)
+    if fenced_match:
+        return fenced_match.group(1)
+
+    start = text.find("{")
+    end = text.rfind("}")
+    if start != -1 and end != -1 and start < end:
+        return text[start:end + 1]
+
+    raise ValueError("Model response did not contain a JSON object.")
+
+
+def _extract_with_gemini(model_name: str, messages: list[dict[str, str]]) -> MatchReport:
+    provider = GeminiProvider(model_name=model_name)
+    system_prompt = messages[0]["content"] + f"\n\nSchema: {MatchReport.model_json_schema()}"
+    result = provider.generate(messages[1]["content"], system_prompt=system_prompt)
+    payload = _extract_json_payload(result["content"])
+    return MatchReport.model_validate_json(payload)
+
+
+def _extract_with_openrouter(model_name: str, messages: list[dict[str, str]]) -> MatchReport:
+    provider = OpenRouterProvider(model_name=model_name)
+    system_prompt = messages[0]["content"] + f"\n\nSchema: {MatchReport.model_json_schema()}"
+    result = provider.generate(messages[1]["content"], system_prompt=system_prompt)
+    payload = _extract_json_payload(result["content"])
+    return MatchReport.model_validate_json(payload)
 
 def execute_matching_llm(jd_json: str, cv_json: str) -> MatchReport:
     prompt_path = os.path.join(
@@ -74,12 +119,21 @@ def execute_matching_llm(jd_json: str, cv_json: str) -> MatchReport:
 
     attempts = _provider_attempts()
     if not attempts:
-        raise RuntimeError("No LLM provider is configured. Please set OPENROUTER_API_KEY or OPENAI_API_KEY in .env.")
+        raise RuntimeError("No LLM provider is configured. Please set GEMINI_API_KEY, OPENROUTER_API_KEY, or OPENAI_API_KEY in .env.")
 
     provider_errors: List[str] = []
 
     for provider_name, model_name, client_factory in attempts:
         try:
+            if provider_name == "gemini":
+                return _extract_with_gemini(model_name, messages)
+
+            if provider_name == "openrouter":
+                return _extract_with_openrouter(model_name, messages)
+
+            if client_factory is None:
+                raise ValueError(f"Missing client factory for provider: {provider_name}")
+
             client = instructor.from_openai(client_factory())
             response_data = client.chat.completions.create(
                 model=model_name,

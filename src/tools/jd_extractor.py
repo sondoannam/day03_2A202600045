@@ -1,12 +1,13 @@
 import os
 import re
-from typing import Callable, List, Tuple
+from typing import Callable, List, Optional, Tuple
 
 import instructor
 import pdfplumber
 from openai import OpenAI
 
 from src.schemas.cv_tailoring import JobDescription, SourceType
+from src.core.gemini_provider import GeminiProvider
 from src.core.openrouter_provider import OpenRouterProvider
 
 try:
@@ -30,8 +31,18 @@ def _is_configured_key(value: str | None) -> bool:
     }
 
 
-def _provider_attempts() -> List[Tuple[str, str, Callable[[], OpenAI]]]:
-    attempts: List[Tuple[str, str, Callable[[], OpenAI]]] = []
+def _provider_attempts() -> List[Tuple[str, str, Optional[Callable[[], OpenAI]]]]:
+    attempts: List[Tuple[str, str, Optional[Callable[[], OpenAI]]]] = []
+
+    gemini_key = os.getenv("GEMINI_API_KEY")
+    if _is_configured_key(gemini_key):
+        attempts.append(
+            (
+                "gemini",
+                os.getenv("GEMINI_JD_MODEL", os.getenv("DEFAULT_MODEL", "gemini-3-flash-preview")),
+                None,
+            )
+        )
 
     openrouter_key = os.getenv("OPENROUTER_API_KEY")
     if _is_configured_key(openrouter_key):
@@ -84,11 +95,17 @@ def parse_pdf_to_text(pdf_path: str) -> dict:
 def _extract_with_provider(
     provider_name: str,
     model_name: str,
-    client_factory: Callable[[], OpenAI],
+    client_factory: Optional[Callable[[], OpenAI]],
     raw_text: str,
 ) -> JobDescription:
+    if provider_name == "gemini":
+        return _extract_with_gemini(model_name=model_name, raw_text=raw_text)
+
     if provider_name == "openrouter":
         return _extract_with_openrouter(model_name=model_name, raw_text=raw_text)
+
+    if client_factory is None:
+        raise ValueError(f"Missing client factory for provider: {provider_name}")
 
     client = instructor.from_openai(client_factory())
     return client.chat.completions.create(
@@ -124,6 +141,21 @@ def _extract_json_payload(text: str) -> str:
 
 def _extract_with_openrouter(model_name: str, raw_text: str) -> JobDescription:
     provider = OpenRouterProvider(model_name=model_name)
+    schema_json = JobDescription.model_json_schema()
+    system_prompt = (
+        "Extract the job description into valid JSON only. "
+        "Return exactly one JSON object and no markdown. "
+        "Use enum values exactly as defined in the schema. "
+        "Every requirement and responsibility must include evidence quotes copied verbatim from the JD. "
+        f"Schema: {schema_json}"
+    )
+    result = provider.generate(raw_text, system_prompt=system_prompt)
+    payload = _extract_json_payload(result["content"])
+    return JobDescription.model_validate_json(payload)
+
+
+def _extract_with_gemini(model_name: str, raw_text: str) -> JobDescription:
+    provider = GeminiProvider(model_name=model_name)
     schema_json = JobDescription.model_json_schema()
     system_prompt = (
         "Extract the job description into valid JSON only. "

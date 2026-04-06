@@ -1,0 +1,10 @@
+--- ATS COMPLIANCE REPORT ---
+Overall Match Score: 52.0/100
+  - Critical Keyword Match: 0.0% (0/10 MUST matched)
+  - Contextual Match: 100.0% (0/0 SHOULD matched)
+  - Format Integrity: 80.0%
+  - Section Completeness: 40.0%
+CRITICAL MISSING: Bachelor Degree in Business Administration, HR or related field., 3 year experience working in a similar role with INGO or equivalent., Maintain absolute confidentiality regarding staff, personnel issues, Demonstrated flexible approach and ability to work under pressure and to organise and manage workload to meet deadlines., Knowledge of Microsoft Office and other software applicable to role., Willingness to take initiative and collaborative, positive attitude and keep confidential., Good in detail and accuracy, time management (multi task at the same time)., Good communication skills in English and Khmer (both written and spoken)., Demonstrates WWF behaviours in ways of working: strive for impact, listen deeply, collaborate openly and innovate fearlessly, Adheres to WWF’s value: Knowledgeable, Optimistic, Determined and Engaging.
+FORMAT ISSUES: Table detected — ATS may fail to parse columns
+
+Final Status: REVISION REQUIRED: Ensure all MUST keywords are included and score >= 80.
